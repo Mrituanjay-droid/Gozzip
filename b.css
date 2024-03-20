@@ -1,8 +1,11 @@
 
 body{
-    background: linear-gradient(.25turn, #101261, #07021d);
+    background: linear-gradient(.25turn, #5455a3, #07021d);
+    padding: 20px;
+    margin-top: 10pz;
 }
 nav{
+  padding-left:   10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,6 +14,10 @@ nav h1{
     color: whitesmoke;
     font-size: 40px;
     margin-left: 30px;
+}
+.logo{
+  width: 250px;
+  height: 79.5px;
 }
 nav ul li{
     display: inline-block;
@@ -48,7 +55,7 @@ aside {
     float: left;
     padding-top: 20px;
     color: #fff;
-    width: 250px; /* Adjust width as needed */
+    width: 260px; /* Adjust width as needed */
     padding-left: 20px;
     border-right-style: solid;
     height: 100vh;
@@ -142,6 +149,8 @@ aside {
   }
 
 .search{
+  margin-top: 30px;
+  margin-bottom: 30px;
     flex-grow: 1;
     width: max-content;
     display: flex;
@@ -154,4 +163,107 @@ aside {
     border-radius: 40px; /* Adjust border-radius for roundness */
     padding: 20px; /* Add padding for better appearance */
     border: 1px solid #ccc; 
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.container {
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  color: rgb(198, 204, 209);
+  display: flex;
+  flex-direction: column;
+  width: clamp(30rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #3f3f3f;
+
+}
+
+
+.card__body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
 }
